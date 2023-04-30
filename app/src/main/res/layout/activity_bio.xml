@@ -1,0 +1,94 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--NIM : 10120766 , NAMA : REYKA MOCHAMMAD RAIHAN , KELAS : IF-9 ,TGL PENGERJAAN : 30/04/23-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bio"
+    android:background="#f8f8f8">
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="235dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="22dp"
+        android:backgroundTint="#ffe41e"
+        android:text="Selanjutnya"
+        android:gravity="center"
+        style="@style/ButtonYellowRounded18RubikMedium14Black"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Nama Panggilan Kamu"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="211dp"
+        android:text="Umur Kamu"
+        android:textColor="@android:color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namapanggilan"
+        style="@style/EdtRubikRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorGunmetal"
+        android:hint="@string/biodata_hint_name_holder"
+        android:paddingBottom="50dp"
+        android:textColorHint="@color/colorGunmetal"
+        android:textSize="20dp"
+        android:layout_marginLeft="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:placeholderText="Username"
+        app:placeholderTextColor="@color/colorGunmetal" />
+
+    <EditText
+        android:id="@+id/umur"
+        style="@style/EdtRubikRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorGunmetal"
+        android:hint="@string/biodata_age_holder"
+        android:paddingBottom="50dp"
+        android:textColorHint="@color/colorGunmetal"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:placeholderText="Username"
+        app:placeholderTextColor="@color/colorGunmetal" />
+</androidx.constraintlayout.widget.ConstraintLayout>

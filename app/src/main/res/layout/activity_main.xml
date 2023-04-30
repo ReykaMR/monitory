@@ -1,0 +1,65 @@
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--NIM : 10120766 , NAMA : REYKA MOCHAMMAD RAIHAN , KELAS : IF-9 ,TGL PENGERJAAN : 30/04/23-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#f8f8f8">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/home"
+        android:contentDescription="@string/walkthrough_text"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtWalkthroughTitle"
+        android:fontFamily="@font/rubik_medium"
+        android:textSize="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen36"
+        android:layout_marginEnd="@dimen/dimen36"
+        android:gravity="center"
+        android:text="@string/walkthrough_text"
+        app:layout_constraintBottom_toTopOf="@id/footer"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen104"
+        android:background="@drawable/bg_lin_border_white"
+        android:elevation="@dimen/dimen6"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnWalkthroughStart"
+            style="@style/ButtonYellowRounded18RubikMedium14Black"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dimen26"
+            android:layout_marginEnd="@dimen/dimen26"
+            android:elevation="@dimen/dimen6"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/walkthrough_button_start"
+            android:textAllCaps="false"></androidx.appcompat.widget.AppCompatButton>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- NIM    : 10120766 -->
+    <!-- Nama   : Reyka Mochammad Raihan -->
+    <!-- Kelas  : IF-9 -->
+    <!-- Tanggal Pengerjaan : 28-04-2023 -->

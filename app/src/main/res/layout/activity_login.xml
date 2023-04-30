@@ -1,0 +1,120 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!--NIM : 10120766 , NAMA : REYKA MOCHAMMAD RAIHAN , KELAS : IF-9 ,TGL PENGERJAAN : 30/04/23-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="#f8f8f8">
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="-150dp">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Kode Keluarga"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Ketikkan kode keluarga yang Ayah Bunda miliki disini"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/edtInputCode"
+            style="@style/EditWhiteBorderYellowRubikRegular14Gunmetal"
+            android:layout_width="330dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:inputType="textCapCharacters"
+            android:textAllCaps="true" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik_regular"
+            android:text="Dengan menekan tombol masuk berarti Anda menyetujui Ketentuan Pengguna dan Kebijakan Data kami"
+            android:textAlignment="center"
+            android:textSize="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnWalkthroughStart"
+            style="@style/ButtonYellowRounded18RubikMedium14Black"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="@dimen/dimen26"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/dimen26"
+            android:elevation="@dimen/dimen6"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:text="@string/check_code_button_get_started"
+            android:textAllCaps="false"
+            android:textSize="15dp">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <RelativeLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="353dp"
+            android:background="@drawable/bg_lin_border_white"
+            android:elevation="@dimen/dimen6"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Belum punya kode keluarga?"
+                android:textAlignment="center"
+                android:textColor="#525b60"
+                android:textSize="15dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnWalkthroughStart"
+                style="@style/ButtonBlueRounded18RubikMedium14White"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="@dimen/dimen26"
+                android:layout_marginEnd="@dimen/dimen26"
+                android:elevation="@dimen/dimen6"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="@string/check_code_button_buy"
+                android:textAllCaps="false"
+                android:textSize="15dp"></androidx.appcompat.widget.AppCompatButton>
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
