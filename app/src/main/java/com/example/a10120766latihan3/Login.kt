@@ -1,7 +1,7 @@
 
 // NIM : 10120766 , NAMA : REYKA MOCHAMMAD RAIHAN , KELAS : IF-9 ,TGL PENGERJAAN : 30/04/23
 
-package com.example.a10120772latihan3
+package com.example.a10120766latihan3
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
